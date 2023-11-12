@@ -27,10 +27,16 @@ section {
 h1,
 h2 {
     color: #333;
+    text-transform: capitalize;
 }
 
 a {
     color: #007BFF;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 li {
@@ -46,7 +52,7 @@ li {
     margin-bottom: 10px;
 }
 
-ul {
+#techSkills ul {
     list-style: none;
     padding: 0;
     display: grid;
