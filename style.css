@@ -47,6 +47,11 @@ li {
     margin-bottom: 10px;
 }
 
+#aboutMe p{
+    line-height: 1.5;
+    margin: 0;
+}
+
 #techSkills ul {
     list-style: none;
     padding: 0;
@@ -62,6 +67,7 @@ li {
 
 #education h4,p {
     margin: 1rem;
+    margin-left: 0;
 }
 
 #workExperience  div {
@@ -69,8 +75,8 @@ li {
     justify-content: space-between; 
 }
 
-#workExperience h4,p {
-    margin: 1rem;
+#contact ul {
+    list-style: none;
 }
 
 footer {
