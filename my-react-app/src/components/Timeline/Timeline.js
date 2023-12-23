@@ -16,11 +16,13 @@ const CustomTimeline = ({title, icon, children}) => {
     // const title = props
 
   return (
-    <Timeline className='timeline'>
+    <Timeline className='timeline' >
     {/* item header  */}    
       <TimelineItem className='timeline_firstItem'>
         <TimelineSeparator>
-          <TimelineDot className='timeline_dot_header'>{<WorkIcon/>}</TimelineDot>
+          <TimelineDot className='timeline_dot_header'>
+            {icon}
+          </TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent><Typography variant='h6' className='timeline_header'>{title}</Typography></TimelineContent>
@@ -28,17 +30,18 @@ const CustomTimeline = ({title, icon, children}) => {
 
         {children}
 
-      <TimelineItem>
-        <CustomTimelineSeperator/>
+{/* commenting the below snippet cause we gonna reuse it */}
+      {/* <TimelineItem className='timeline_content'>
+        <CustomTimelineSeparator/>
         <TimelineContent>Code</TimelineContent>
-      </TimelineItem>
+      </TimelineItem> */}
     </Timeline>
   )
 }
 
-export const CustomTimelineSeperator =() => (
+export const CustomTimelineSeparator =() => (
     <TimelineSeparator className='separator_padding'>
-        <TimelineDot className='timeline_dot'/>
+        <TimelineDot variant='outlined' className='timeline_dot'/>
         <TimelineConnector />
     </TimelineSeparator>
 );
