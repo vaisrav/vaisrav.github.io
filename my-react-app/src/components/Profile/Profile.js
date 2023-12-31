@@ -4,13 +4,14 @@ import React from 'react'
 import './Profile.css'
 
 import CustomTimeline from '../Timeline/Timeline'
+import resumeData from '../../utils/resumeData'
 
 const Profile = () => {
   return (
     <div className='profile container_shadow'>
         <div className='profile_name'>
-            <Typography className='name'>name</Typography>
-            <Typography className='title'>title</Typography>
+            <Typography className='name'>{resumeData.name}</Typography>
+            <Typography className='title'>{resumeData.title}</Typography>
         </div>
 
         <figure className='profile_image'>
